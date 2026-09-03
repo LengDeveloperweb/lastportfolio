@@ -202,48 +202,7 @@ export const PROJECTS: Project[] = [
         'Clean Architecture implementation with separated Domain, Application, Infrastructure, and API layers. Utilizes MediatR pattern for CQRS command/query segregation.',
     },
   },
-  {
-    id: 'spring-boot-gateway',
-    number: '03 / 05',
-    year: '2026',
-    category: 'Enterprise Backend Gateway',
-    categoryKm: 'ប្រព័ន្ធច្រកទ្វារសេវាកម្ម Backend',
-    title: 'Spring Boot Microservices Hub',
-    description:
-      'High-throughput Java 21 Spring Boot RESTful API service orchestrating distributed services with PostgreSQL data store, Redis caching, and Docker Compose.',
-    descriptionKm:
-      'សេវាកម្ម API ដំណើរការខ្ពស់ដោយប្រើ Java 21 Spring Boot 3 សម្រាប់គ្រប់គ្រងទិន្នន័យ រួមជាមួយ PostgreSQL, Redis Caching និង Docker Compose។',
-    tags: ['Java 21', 'Spring Boot 3', 'PostgreSQL', 'Redis', 'Docker Compose'],
-    gradient: 'from-[#431407] via-[#9a3412]/40 to-[#000000]',
-    accentColor: '#fb923c',
-    bannerUrl: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80',
-    liveDemoUrl: 'https://lengtool.site',
-    sourceUrl: 'https://github.com/LengDeveloperweb/spring-boot-microservice-hub',
-    details: {
-      overview:
-        'An enterprise-grade Java microservice template demonstrating distributed transaction patterns, Redis-based token rate limiting, and JPA repository query optimization for high concurrency.',
-      overviewKm:
-        'គម្រោងគំរូ Microservice កម្រិត Enterprise បង្ហាញពីការរៀបចំប្រព័ន្ធផ្ទៀងផ្ទាត់សិទ្ធិ ការគ្រប់គ្រង Rate Limit តាមរយៈ Redis និងការបង្កើនល្បឿន Query តាមរយៈ Spring Data JPA។',
-      specs: [
-        { label: 'Language', value: 'Java 21 (LTS) with Virtual Threads' },
-        { label: 'Framework', value: 'Spring Boot 3.3.x' },
-        { label: 'Cache Layer', value: 'Redis 7.2 cluster mode' },
-        { label: 'Container', value: 'Alpine-based lightweight OCI image' },
-      ],
-      impact: [
-        'Maintains sub-15ms P99 latency under 2,500 requests per second load testing.',
-        'Automated database migrations managed with Flyway version-controlled scripts.',
-        'Complete Swagger / OpenAPI documentation auto-generated at build time.',
-      ],
-      impactKm: [
-        'រក្សាល្បឿនឆ្លើយតបក្រោម ១៥ms សូម្បីតែក្នុងពេលមានសំណើ ២៥០០ សំណើក្នុងមួយវិនាទី។',
-        'គ្រប់គ្រងការកែប្រែ Database ដោយស្វ័យប្រវត្តិតាមរយៈ Flyway Script។',
-        'មានឯកសារ API Swagger / OpenAPI ដោយស្វ័យប្រវត្តិ។',
-      ],
-      architectureNotes:
-        'Leverages Javha Virtual Threads (Project Loom) to achieve near non-blocking I/O efficiency while maintaining readable synchronous programming semantics.',
-    },
-  },
+  
   {
     id: 'postgres-data-engine',
     number: '04 / 05',

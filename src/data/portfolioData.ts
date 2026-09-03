@@ -60,7 +60,7 @@ export const DEVELOPER_QUOTES: DeveloperQuote[] = [
 
 export const TECH_STACK: SkillItem[] = [
   { name: 'React 19', category: 'frontend', level: 'Advanced', experience: '', featured: true },
-  { name: 'TypeScript', category: 'frontend', level: 'Advanced', experience: '', featured: true },
+  { name: 'GitHub & Postman', category: 'Devops', level: 'Advanced', experience: '', featured: true },
   { name: 'Tailwind CSS', category: 'frontend', level: 'Expert', experience: '', featured: true },
   { name: 'C# / ASP.NET Core', category: 'backend', level: 'Proficient', experience: '', featured: true },
   { name: 'PostgreSQL', category: 'database', level: 'Advanced', experience: '', featured: true },
@@ -142,7 +142,7 @@ export const PROJECTS: Project[] = [
         'LengTool គឺជាវេទិកាឧបករណ៍ផលិតភាពដែលកំពុងដំណើរការផ្ទាល់ បង្កើតឡើងដើម្បីផ្តល់នូវឧបករណ៍ដែលមានល្បឿនលឿនភ្លាមៗ ដោយមិនទាមទារការចុះឈ្មោះ និងមិនរក្សាទុកទិន្នន័យសម្ងាត់របស់អ្នកប្រើ។ មានជាង ២៥+ មុខងាររួមមាន JSON/SQL Formatter, Base64/JWT Inspector, Regex Tester និងម៉ាស៊ីនគណនាកាលបរិច្ឆេទចន្ទគតិខ្មែរ។',
       specs: [
         { label: 'Live Domain', value: 'lengtool.site' },
-        { label: 'Tech Stack', value: 'React 19 · TypeScript · Tailwind CSS' },
+        { label: 'Tech Stack', value: 'React 19 · Tailwind CSS' },
         { label: 'Container', value: 'Dockerized multi-stage build' },
         { label: 'Performance', value: '100% Lighthouse Performance Score' },
       ],
@@ -241,7 +241,7 @@ export const PROJECTS: Project[] = [
         'មានឯកសារ API Swagger / OpenAPI ដោយស្វ័យប្រវត្តិ។',
       ],
       architectureNotes:
-        'Leverages Java 21 Virtual Threads (Project Loom) to achieve near non-blocking I/O efficiency while maintaining readable synchronous programming semantics.',
+        'Leverages Javha Virtual Threads (Project Loom) to achieve near non-blocking I/O efficiency while maintaining readable synchronous programming semantics.',
     },
   },
   {
@@ -309,7 +309,7 @@ export const PROJECTS: Project[] = [
       overviewKm:
         'សេវាកម្មបញ្ជូនសារជូនដំណឹងស្វ័យប្រវត្តិសម្រាប់ក្រុមការងារ នៅពេលមាន Server Down ឬមាន Code Commit ថ្មី ដោយបញ្ជូនទៅកាន់ Telegram និង Discord ភ្លាមៗ។',
       specs: [
-        { label: 'Runtime', value: 'Node.js 22 LTS' },
+        { label: 'Runtime', value: ' 22 LTS' },
         { label: 'Protocols', value: 'HTTP Webhooks & Full-duplex WebSocket' },
         { label: 'Security', value: 'HMAC-SHA256 signature verification' },
         { label: 'Retry Queue', value: 'Exponential backoff failed event retry' },

@@ -178,7 +178,7 @@ export const Hero: React.FC = () => {
 
         {/* Quick Tech Stack Pill Strip */}
         <div className="flex flex-wrap items-center justify-center gap-2 pt-4 border-t border-white/10 max-w-2xl">
-          {['REACT 19', 'TYPESCRIPT', 'TAILWIND CSS', 'C# ASP.NET', 'SPRING BOOT', 'POSTGRESQL', 'DOCKER'].map(
+          {['REACT 19', 'Python', 'TAILWIND CSS', 'C# ASP.NET', 'VS Code', 'POSTGRESQL', 'DOCKER'].map(
             (tech) => (
               <span
                 key={tech}

@@ -59,18 +59,16 @@ export const DEVELOPER_QUOTES: DeveloperQuote[] = [
 ];
 
 export const TECH_STACK: SkillItem[] = [
-  { name: 'React 19', category: 'frontend', level: 'Advanced', experience: '3+ yrs', featured: true },
-  { name: 'TypeScript', category: 'frontend', level: 'Advanced', experience: '3+ yrs', featured: true },
-  { name: 'Tailwind CSS', category: 'frontend', level: 'Expert', experience: '3+ yrs', featured: true },
-  { name: 'C# / ASP.NET Core', category: 'backend', level: 'Proficient', experience: '2+ yrs', featured: true },
-  { name: 'Java / Spring Boot', category: 'backend', level: 'Proficient', experience: '2+ yrs', featured: true },
-  { name: 'PostgreSQL', category: 'database', level: 'Advanced', experience: '2+ yrs', featured: true },
-  { name: 'Docker', category: 'devops', level: 'Proficient', experience: '2+ yrs', featured: true },
-  { name: 'Node.js / Express', category: 'backend', level: 'Advanced', experience: '3+ yrs', featured: true },
-  { name: 'REST APIs & GraphQL', category: 'backend', level: 'Proficient', experience: '2+ yrs' },
-  { name: 'Bootstrap 5', category: 'frontend', level: 'Expert', experience: '3+ yrs' },
-  { name: 'Git & GitHub Actions', category: 'devops', level: 'Advanced', experience: '3+ yrs' },
-  { name: 'Linux & Nginx', category: 'devops', level: 'Working', experience: '2+ yrs' },
+  { name: 'React 19', category: 'frontend', level: 'Advanced', experience: '', featured: true },
+  { name: 'TypeScript', category: 'frontend', level: 'Advanced', experience: '', featured: true },
+  { name: 'Tailwind CSS', category: 'frontend', level: 'Expert', experience: '', featured: true },
+  { name: 'C# / ASP.NET Core', category: 'backend', level: 'Proficient', experience: '', featured: true },
+  { name: 'PostgreSQL', category: 'database', level: 'Advanced', experience: '', featured: true },
+  { name: 'Docker', category: 'devops', level: 'Proficient', experience: '', featured: true },
+  { name: 'Python / Express', category: 'backend', level: 'Advanced', experience: '', featured: true },
+  { name: 'REST APIs ', category: 'backend', level: 'Proficient', experience: '' },
+  { name: 'Bootstrap 5', category: 'frontend', level: 'Expert', experience: '' },
+  { name: 'Git & GitHub Actions', category: 'devops', level: 'Advanced', experience: '' },
 ];
 
 export const ROLES: RoleItem[] = [

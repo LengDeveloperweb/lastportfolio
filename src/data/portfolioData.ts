@@ -129,7 +129,7 @@ export const PROJECTS: Project[] = [
       'A production-grade, fast developer and daily web utility suite providing formatters, encoders, calculators, and Khmer language tools built with React, TypeScript, and Tailwind CSS.',
     descriptionKm:
       'កញ្ចប់ឧបករណ៍វេបសាយទំនើប និងលឿនរហ័ស សម្រាប់អ្នកអភិវឌ្ឍន៍ និងការងារប្រចាំថ្ងៃ រួមមានឧបករណ៍ Format កូដ, Encode/Decode, ម៉ាស៊ីនគណនា និងឧបករណ៍ភាសាខ្មែរ បង្កើតដោយ React, TypeScript និង Tailwind CSS។',
-    tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Docker', 'Vite', 'Cloud Run'],
+    tags: ['React 19', 'Tailwind CSS', 'Docker', 'Vite', 'Cloud Run'],
     gradient: 'from-[#083344] via-[#0e7490]/40 to-[#000000]',
     accentColor: '#06b6d4',
     bannerUrl: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80',

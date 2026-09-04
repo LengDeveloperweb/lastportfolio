@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
     'CS Scholar @ SETEC Institute',
     'Founder & Creator of LengTool',
     'React 19 & TypeScript Architect',
-    'C# ASP.NET & Spring Boot Engineer',
+    'Laravel & PHP',
     'Crafting High-Performance Web Systems',
   ];
   const [phraseIndex, setPhraseIndex] = useState(0);
@@ -178,7 +178,7 @@ export const Hero: React.FC = () => {
 
         {/* Quick Tech Stack Pill Strip */}
         <div className="flex flex-wrap items-center justify-center gap-2 pt-4 border-t border-white/10 max-w-2xl">
-          {['REACT 19', 'Python', 'TAILWIND CSS', 'C# ASP.NET', 'VS Code', 'POSTGRESQL', 'DOCKER'].map(
+          {['REACT 19', 'Laravel', 'TAILWIND CSS', 'PHP', 'VS Code', 'POSTGRESQL', 'DOCKER'].map(
             (tech) => (
               <span
                 key={tech}

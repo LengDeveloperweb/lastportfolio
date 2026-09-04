@@ -175,16 +175,16 @@ export const PROJECTS: Project[] = [
     gradient: 'from-[#1e1b4b] via-[#3730a3]/40 to-[#000000]',
     accentColor: '#818cf8',
     bannerUrl: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80',
-    liveDemoUrl: 'https://ais-dev-h77q66essngbvraeq6hlb4-88009127130.asia-southeast1.run.app',
-    sourceUrl: 'https://github.com/LengDeveloperweb/setec-academic-hub',
+    liveDemoUrl: '',
+    sourceUrl: '',
     details: {
       overview:
         'A comprehensive university enterprise portal designed to streamline student course registration, lecturer grading submissions, and GPA transcript generation for SETEC Institute curriculum workflows.',
       overviewKm:
         'ប្រព័ន្ធព័ត៌មានវិទ្យាកម្រិតស្ថាប័នអប់រំ ដែលរចនាឡើងដើម្បីជួយសម្រួលដល់ការចុះឈ្មោះមុខវិជ្ជា ការបញ្ចូលពិន្ទុរបស់សាស្ត្រាចារ្យ និងការគណនា GPA សម្រាប់កម្មវិធីសិក្សានៅវិទ្យាស្ថាន SETEC។',
       specs: [
-        { label: 'Backend', value: 'ASP.NET Core 8.0 Web API' },
-        { label: 'Database', value: 'PostgreSQL with B-tree indices' },
+        { label: 'Backend', value: 'Laravel Web API' },
+        { label: 'Database', value: 'SQL with B-tree indices' },
         { label: 'Authentication', value: 'JWT Bearer with Role-Based Access (RBAC)' },
         { label: 'Deployment', value: 'Docker Container on Linux host' },
       ],
@@ -245,48 +245,7 @@ export const PROJECTS: Project[] = [
         'Includes detailed EXPLAIN ANALYZE execution cost graphs illustrating sequential scan elimination and memory buffer hit optimization.',
     },
   },
-  {
-    id: 'chatbridge-gateway',
-    number: '05 / 05',
-    year: '2026',
-    category: 'Real-Time Integration & Bots',
-    categoryKm: 'ច្រកទ្វារ Bot & សារភ្លាមៗ',
-    title: 'ChatBridge Bot Gateway',
-    description:
-      'A cross-platform event webhook bridge synchronizing messages, alerts, and system telemetry across Telegram groups, Discord channels, and web apps in real-time.',
-    descriptionKm:
-      'ប្រព័ន្ធតភ្ជាប់ Telegram Bot, Discord Webhook និងសារជូនដំណឹងប្រព័ន្ធបច្ចេកវិទ្យា តាមពេលវេលាជាក់ស្តែង (Real-Time) ដោយប្រើ Node.js និង WebSocket។',
-    tags: ['Node.js', 'Express', 'Telegram API', 'Discord Webhook', 'WebSocket'],
-    gradient: 'from-[#311042] via-[#581c87]/40 to-[#000000]',
-    accentColor: '#c084fc',
-    bannerUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
-    liveDemoUrl: 'https://lengtool.site',
-    sourceUrl: 'https://github.com/LengDeveloperweb/chatbridge-gateway',
-    details: {
-      overview:
-        'A resilient microservice acting as a centralized dispatcher for team notifications, server uptime alerts, and developer commits routed dynamically based on message topic and priority.',
-      overviewKm:
-        'សេវាកម្មបញ្ជូនសារជូនដំណឹងស្វ័យប្រវត្តិសម្រាប់ក្រុមការងារ នៅពេលមាន Server Down ឬមាន Code Commit ថ្មី ដោយបញ្ជូនទៅកាន់ Telegram និង Discord ភ្លាមៗ។',
-      specs: [
-        { label: 'Runtime', value: ' 22 LTS' },
-        { label: 'Protocols', value: 'HTTP Webhooks & Full-duplex WebSocket' },
-        { label: 'Security', value: 'HMAC-SHA256 signature verification' },
-        { label: 'Retry Queue', value: 'Exponential backoff failed event retry' },
-      ],
-      impact: [
-        'Dispatches critical server deployment notices in < 80ms.',
-        'Guaranteed at-least-once delivery with persistent SQLite replay buffer.',
-        'Zero bot downtime with auto-reconnect heartbeat monitors.',
-      ],
-      impactKm: [
-        'បញ្ជូនដំណឹងបន្ទាន់ទៅកាន់ទូរស័ព្ទក្នុងរយៈពេលតិចជាង ៨០ms។',
-        'ធានាសារមិនបាត់បង់តាមរយៈប្រព័ន្ធ Retry ស្វ័យប្រវត្តិ។',
-        'ដំណើរការ ២៤/៧ ដោយមិនមានការរអាក់រអួល។',
-      ],
-      architectureNotes:
-        'Built with an event-driven architecture using Node.js EventEmitters and resilient WebSocket connection heartbeat pings.',
-    },
-  },
+  
 ];
 
 export const BLOG_ARTICLES: BlogArticle[] = [

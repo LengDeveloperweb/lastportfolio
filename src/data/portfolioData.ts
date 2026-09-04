@@ -171,7 +171,7 @@ export const PROJECTS: Project[] = [
       'A full-stack student management and grade analytics system built with C# ASP.NET Core Web API, PostgreSQL relational database, and modern responsive frontend.',
     descriptionKm:
       'ប្រព័ន្ធគ្រប់គ្រងនិស្សិត និងវិភាគពិន្ទុសិក្សា Full-Stack បង្កើតឡើងដោយប្រើ C# ASP.NET Core Web API, មូលដ្ឋានទិន្នន័យ PostgreSQL និងផ្ទៃមុខកម្មវិធី React ទំនើប។',
-    tags: ['C# ASP.NET Core', 'PostgreSQL', 'Entity Framework', 'React', 'Docker'],
+    tags: ['Laravel', 'PostgreSQL', 'Entity Framework', 'React', 'Docker'],
     gradient: 'from-[#1e1b4b] via-[#3730a3]/40 to-[#000000]',
     accentColor: '#818cf8',
     bannerUrl: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80',

@@ -62,7 +62,7 @@ export const TECH_STACK: SkillItem[] = [
   { name: 'React 19', category: 'frontend', level: 'Advanced', experience: '', featured: true },
   { name: 'GitHub & Postman', category: 'Devops', level: 'Advanced', experience: '', featured: true },
   { name: 'Tailwind CSS', category: 'frontend', level: 'Expert', experience: '', featured: true },
-  { name: 'Laravel', category: 'backend', level: 'Proficient', experience: '', featured: true },
+  { name: 'Laravel', category: 'backend', level: 'Expert', experience: '', featured: true },
   { name: 'SQL Server', category: 'database', level: 'Advanced', experience: '', featured: true },
   { name: 'Docker', category: 'devops', level: 'Proficient', experience: '', featured: true },
   { name: 'JavaScript', category: 'backend', level: 'Advanced', experience: '', featured: true },
@@ -96,9 +96,9 @@ export const ROLES: RoleItem[] = [
     period: '2025 — Present',
     type: 'Higher Education',
     description:
-      'Excelling in advanced software architecture, database management systems (PostgreSQL), enterprise application engineering (C# ASP.NET Core and Java Spring Boot), and collaborative agile team projects.',
+      'Excelling in advanced software architecture, database management systems (PostgreSQL), and enterprise application engineering with Laravel, React, and modern web technologies.',
     descriptionKm:
-      'សិក្សាជំនាញវិទ្យាសាស្ត្រកុំព្យូទ័រ និងវិស្វកម្មសូហ្វវែរ ដោយផ្តោតលើប្រព័ន្ធគ្រប់គ្រងមូលដ្ឋានទិន្នន័យកម្រិតខ្ពស់ (PostgreSQL), ការបង្កើតប្រព័ន្ធ Enterprise ដោយប្រើ C# ASP.NET Core និង Java Spring Boot។',
+      'សិក្សាជំនាញវិទ្យាសាស្ត្រកុំព្យូទ័រ និងវិស្វកម្មសូហ្វវែរ ដោយផ្តោតលើប្រព័ន្ធគ្រប់គ្រងមូលដ្ឋានទិន្នន័យកម្រិតខ្ពស់ (PostgreSQL) និងការបង្កើតប្រព័ន្ធ Enterprise ដោយប្រើ Laravel និង React។',
     badge: 'ACADEMIC EXCELLENCE',
   },
   {
@@ -168,10 +168,10 @@ export const PROJECTS: Project[] = [
     categoryKm: 'ប្រព័ន្ធគ្រប់គ្រងសាកលវិទ្យាល័យ',
     title: 'SETEC Academic Hub',
     description:
-      'A full-stack student management and grade analytics system built with C# ASP.NET Core Web API, PostgreSQL relational database, and modern responsive frontend.',
+      'A full-stack student management and grade analytics system built with Laravel Web API, PostgreSQL relational database, and modern React frontend.',
     descriptionKm:
-      'ប្រព័ន្ធគ្រប់គ្រងនិស្សិត និងវិភាគពិន្ទុសិក្សា Full-Stack បង្កើតឡើងដោយប្រើ C# ASP.NET Core Web API, មូលដ្ឋានទិន្នន័យ PostgreSQL និងផ្ទៃមុខកម្មវិធី React ទំនើប។',
-    tags: ['Laravel', 'PostgreSQL', 'Entity Framework', 'React', 'Docker'],
+      'ប្រព័ន្ធគ្រប់គ្រងនិស្សិត និងវិភាគពិន្ទុសិក្សា Full-Stack បង្កើតឡើងដោយប្រើ Laravel Web API, មូលដ្ឋានទិន្នន័យ PostgreSQL និងផ្ទៃមុខកម្មវិធី React ទំនើប។',
+    tags: ['Laravel', 'PostgreSQL', 'Eloquent ORM', 'React', 'Docker'],
     gradient: 'from-[#1e1b4b] via-[#3730a3]/40 to-[#000000]',
     accentColor: '#818cf8',
     bannerUrl: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80',
@@ -183,9 +183,9 @@ export const PROJECTS: Project[] = [
       overviewKm:
         'ប្រព័ន្ធព័ត៌មានវិទ្យាកម្រិតស្ថាប័នអប់រំ ដែលរចនាឡើងដើម្បីជួយសម្រួលដល់ការចុះឈ្មោះមុខវិជ្ជា ការបញ្ចូលពិន្ទុរបស់សាស្ត្រាចារ្យ និងការគណនា GPA សម្រាប់កម្មវិធីសិក្សានៅវិទ្យាស្ថាន SETEC។',
       specs: [
-        { label: 'Backend', value: 'Laravel Web API' },
-        { label: 'Database', value: 'SQL with B-tree indices' },
-        { label: 'Authentication', value: 'JWT Bearer with Role-Based Access (RBAC)' },
+        { label: 'Backend', value: 'Laravel Web API with Eloquent ORM' },
+        { label: 'Database', value: 'PostgreSQL with B-tree indices' },
+        { label: 'Authentication', value: 'Laravel Sanctum with Role-Based Access (RBAC)' },
         { label: 'Deployment', value: 'Docker Container on Linux host' },
       ],
       impact: [
@@ -199,7 +199,7 @@ export const PROJECTS: Project[] = [
         'ផ្ទាំងគ្រប់គ្រងទិន្នន័យ (Dashboard) បង្ហាញក្រាហ្វិកកម្រិតពិន្ទុ និងលទ្ធផលសិក្សាយ៉ាងច្បាស់លាស់។',
       ],
       architectureNotes:
-        'Clean Architecture implementation with separated Domain, Application, Infrastructure, and API layers. Utilizes MediatR pattern for CQRS command/query segregation.',
+        'Laravel with Service-Repository pattern for clean separation of concerns. Uses Eloquent ORM with optimized queries and caching strategies for academic data.',
     },
   },
   {
@@ -304,14 +304,14 @@ const ToolModule = React.lazy(() => import(\`./tools/\${toolId}\`));
     readTime: '7',
     category: 'Database Systems',
     summary:
-      'Practical techniques learned from database coursework at SETEC Institute: composite indices, partial index filters, and query plan diagnosis.',
+      'Practical techniques learned from database coursework at SETEC Institute: composite indices, partial index filters, and query plan diagnosis with Laravel and PostgreSQL.',
     summaryKm:
-      'បច្ចេកទេសជាក់ស្តែងដែលបានរៀនពីមុខវិជ្ជា Database នៅវិទ្យាស្ថាន SETEC៖ ការបង្កើត Composite Index, Partial Index និងការវិភាគ Query Plan ឱ្យលឿន។',
-    tags: ['PostgreSQL', 'SQL', 'Performance Tuning', 'Database'],
-    content: `A slow database query can paralyze an entire web application. During my enterprise systems coursework at SETEC Institute, we systematically benchmarked PostgreSQL query execution against large multi-million row synthetic schemas.
+      'បច្ចេកទេសជាក់ស្តែងដែលបានរៀនពីមុខវិជ្ជា Database នៅវិទ្យាស្ថាន SETEC៖ ការបង្កើត Composite Index, Partial Index និងការវិភាគ Query Plan ឱ្យលឿនជាមួយ Laravel និង PostgreSQL។',
+    tags: ['PostgreSQL', 'SQL', 'Performance Tuning', 'Laravel', 'Database'],
+    content: `A slow database query can paralyze an entire web application. During my enterprise systems coursework at SETEC Institute, we systematically benchmarked PostgreSQL query execution against large multi-million row synthetic schemas using Laravel's Eloquent ORM.
 
 ### 1. The Cost of Sequential Scans
-Without proper indexes, PostgreSQL must scan every data page on disk. Using \`EXPLAIN (ANALYZE, BUFFERS)\`:
+Without proper indexes, PostgreSQL must scan every data page on disk. Using Laravel's \`DB::raw()\` with \`EXPLAIN (ANALYZE, BUFFERS)\`:
 \`\`\`sql
 EXPLAIN ANALYZE SELECT * FROM student_records 
 WHERE status = 'ACTIVE' AND campus_id = 104;
@@ -323,9 +323,19 @@ WHERE status = 'ACTIVE';
 \`\`\`
 Execution times dropped from 1,240ms down to 1.8ms—a 99.8% speedup!
 
-### 2. Connection Pooling with PgBouncer
-PostgreSQL assigns a process per client connection. Setting up connection pooling in transaction mode prevents process starvation and allows 5,000 concurrent client requests with only 50 physical backend connections.`,
-    contentKm: `Query យឺតនៅក្នុង Database អាចធ្វើឱ្យប្រព័ន្ធទាំងមូលដំណើរការមិនបានល្អ។ នៅក្នុងការសិក្សានៅវិទ្យាស្ថាន SETEC យើងបានធ្វើតេស្តជាក់ស្តែងលើទិន្នន័យរាប់លានជួរដើម្បីស្វែងរកដំណោះស្រាយល្អបំផុត។
+### 2. Laravel Query Optimization
+Using Laravel's query builder with proper indexing:
+\`\`\`php
+$students = DB::table('student_records')
+    ->where('status', 'ACTIVE')
+    ->where('campus_id', 104)
+    ->get();
+\`\`\`
+This leverages the partial index we created, reducing query time significantly.
+
+### 3. Connection Pooling with Laravel
+Laravel's database connection pool and Redis caching further improve performance, allowing 5,000 concurrent requests with minimal database connections.`,
+    contentKm: `Query យឺតនៅក្នុង Database អាចធ្វើឱ្យប្រព័ន្ធទាំងមូលដំណើរការមិនបានល្អ។ នៅក្នុងការសិក្សានៅវិទ្យាស្ថាន SETEC យើងបានធ្វើតេស្តជាក់ស្តែងលើទិន្នន័យរាប់លានជួរដើម្បីស្វែងរកដំណោះស្រាយល្អបំផុតជាមួយ Laravel Eloquent ORM។
 
 ### ១. គ្រោះថ្នាក់នៃ Sequential Scan
 ប្រសិនបើគ្មាន Index ត្រឹមត្រូវទេ PostgreSQL ត្រូវតែស្វែងរកគ្រប់បន្ទាត់ក្នុង Hard Drive។
@@ -336,45 +346,88 @@ WHERE status = 'ACTIVE';
 \`\`\`
 រយៈពេលដំណើរការបានធ្លាក់ចុះពី ១,២៤០ms មកសល់ត្រឹម ១.៨ms ប៉ុណ្ណោះ!
 
-### ២. ការគ្រប់គ្រង Connection ជាមួយ PgBouncer
-ការប្រើប្រាស់ Connection Pool ជួយឱ្យប្រព័ន្ធទទួលសំណើបានរាប់ពាន់ក្នុងពេលតែមួយ ដោយមិនធ្វើឱ្យ Server អស់ Memory ឡើយ។`,
+### ២. ការបង្កើនប្រសិទ្ធភាព Query ជាមួយ Laravel
+ការប្រើប្រាស់ Laravel Query Builder ជាមួយ Index ត្រឹមត្រូវ៖
+\`\`\`php
+$students = DB::table('student_records')
+    ->where('status', 'ACTIVE')
+    ->where('campus_id', 104)
+    ->get();
+\`\`\`
+នេះធ្វើឱ្យ Query ដំណើរការលឿនជាងមុនច្រើន។
+
+### ៣. ការគ្រប់គ្រង Connection ជាមួយ Laravel
+Laravel មានប្រព័ន្ធ Connection Pool និង Redis Caching ដែលជួយឱ្យប្រព័ន្ធទទួលសំណើបានរាប់ពាន់ក្នុងពេលតែមួយ។`,
   },
   {
     id: 'blog-3',
-    slug: 'dotnet-vs-spring-boot',
-    title: 'ASP.NET Core Web API vs Spring Boot 3: Full-Stack Realities in 2026',
-    titleKm: 'ការប្រៀបធៀបរវាង ASP.NET Core និង Java Spring Boot 3 ក្នុងឆ្នាំ ២០២៦',
+    slug: 'laravel-vs-other-frameworks',
+    title: 'Laravel 11 vs Other PHP Frameworks: Why Laravel Leads in 2026',
+    titleKm: 'ការប្រៀបធៀប Laravel 11 ជាមួយ PHP Frameworks ផ្សេងទៀត៖ ហេតុអ្វី Laravel នាំមុខក្នុងឆ្នាំ ២០២៦',
     date: 'January 2026',
     readTime: '6',
     category: 'Backend Architecture',
     summary:
-      'A side-by-side architectural comparison based on building full-stack academic and production backends in C# and Java.',
+      'A comprehensive comparison of Laravel 11 with other PHP frameworks based on building production full-stack applications with React and Bootstrap.',
     summaryKm:
-      'ការប្រៀបធៀបជាក់ស្តែងរវាង C# ASP.NET Core និង Java Spring Boot ផ្អែកលើការកសាងប្រព័ន្ធជាក់ស្តែងនៅសាកលវិទ្យាល័យ និងការងារផ្ទាល់។',
-    tags: ['C#', 'ASP.NET Core', 'Java', 'Spring Boot', 'Backend'],
-    content: `Both .NET 8/9 and Spring Boot 3 have made massive leaps in developer productivity, cloud-native readiness, and container performance. Having developed enterprise projects with both platforms, here is a practical developer verdict.
+      'ការប្រៀបធៀបជាក់ស្តែងរវាង Laravel 11 និង PHP Frameworks ផ្សេងទៀត ផ្អែកលើការកសាងប្រព័ន្ធ Full-Stack ជាក់ស្តែងជាមួយ React និង Bootstrap។',
+    tags: ['Laravel', 'PHP', 'Full-Stack', 'Backend', 'REST API'],
+    content: `Laravel 11 has cemented its position as the premier PHP framework for modern full-stack development in 2026. Having built multiple production applications with Laravel, React, and Bootstrap, here's why Laravel stands out.
 
-### 1. Developer Ergonomics
-- **C# / ASP.NET Core**: Minimal APIs, top-level statements, and C#'s modern pattern matching provide exceptional developer velocity. Entity Framework Core remains one of the best ORMs in existence.
-- **Java / Spring Boot**: The Spring ecosystem is unrivaled in enterprise integrations, robust security filters, and cloud observability via Actuator and Micrometer.
+### 1. Developer Experience
+Laravel 11 introduces streamlined application structure with minimal boilerplate:
+- **Simplified bootstrap** with fewer configuration files
+- **Improved routing** with cleaner syntax
+- **Enhanced Eloquent ORM** with better performance
 
-### 2. Memory Footprint & Startup
-In Docker container environments:
-- ASP.NET Core natively compiles with AOT (Ahead-Of-Time), boasting startup times under 50ms and RAM usage below 35MB.
-- Spring Boot 3 with GraalVM Native Image has closed the gap, though traditional JVM mode still takes ~400ms to boot.
+### 2. API Development
+Laravel makes REST API development effortless:
+\`\`\`php
+Route::apiResource('tours', TourController::class);
+\`\`\`
+With Laravel Sanctum for authentication and built-in rate limiting, building secure APIs takes minutes.
 
-### 3. Conclusion
-Both are phenomenal choices for serious enterprise systems in 2026. ASP.NET Core is my choice for rapid full-stack delivery, while Spring Boot excels for large distributed enterprise microservices.`,
-    contentKm: `ទាំង .NET 8/9 និង Spring Boot 3 សុទ្ធតែបានធ្វើឱ្យប្រសើរឡើងយ៉ាងខ្លាំងនូវល្បឿន និងភាពងាយស្រួលក្នុងការសរសេរកូដ។ បន្ទាប់ពីបានអភិវឌ្ឍប្រព័ន្ធជាមួយបច្ចេកវិទ្យាទាំងពីរនេះ ខ្ញុំសូមចែករំលែកនូវចំណុចសំខាន់ៗ៖
+### 3. Integration with Modern Frontend
+Laravel's seamless integration with Vite, React, and Inertia.js makes full-stack development smooth:
+\`\`\`bash
+npm install && npm run build
+\`\`\`
+The built-in Laravel Mix and Vite support ensures modern asset compilation.
+
+### 4. Performance Optimization
+- **Queues** for background job processing
+- **Redis caching** for lightning-fast data retrieval
+- **Database optimization** with Eloquent and PostgreSQL indexing
+
+### 5. Conclusion
+Laravel 11 is the framework of choice for building scalable, maintainable enterprise applications in 2026. Combined with React and Bootstrap, it delivers unmatched productivity and performance.`,
+    contentKm: `Laravel 11 បានបង្ហាញថាជា PHP Framework ដ៏ល្អបំផុតសម្រាប់ការអភិវឌ្ឍ Full-Stack ក្នុងឆ្នាំ ២០២៦។ បន្ទាប់ពីបានបង្កើតកម្មវិធីជាច្រើនជាមួយ Laravel, React និង Bootstrap នេះជាមូលហេតុដែល Laravel ពូកែជាងគេ៖
 
 ### ១. ភាពងាយស្រួលក្នុងការសរសេរកូដ
-- **C# / ASP.NET Core**: មានភាពងាយស្រួល សាមញ្ញ រហ័ស និងមាន Entity Framework Core ដែលជា ORM ដ៏មានឥទ្ធិពលបំផុត។
-- **Java / Spring Boot**: មានប្រព័ន្ធសុវត្ថិភាពខ្ពស់ និងស័ក្តិសមបំផុតសម្រាប់ប្រព័ន្ធធនាគារ ឬក្រុមហ៊ុនខ្នាតធំ។
+Laravel 11 មានរចនាសម្ព័ន្ធសាមញ្ញ និងងាយស្រួលប្រើប្រាស់៖
+- ការរៀបចំប្រព័ន្ធងាយស្រួលជាងមុន
+- Routing កាន់តែស្អាត
+- Eloquent ORM ដំណើរការលឿនជាងមុន
 
-### ២. ការប្រើប្រាស់ Memory និងទំហំ Container
-ASP.NET Core ប្រើប្រាស់ Memory តិច និងចាប់ផ្តើមដំណើរការលឿនជាងមុនខ្លាំង (ក្រោម ៥០ms) ក្នុង Docker Container។
+### ២. ការបង្កើត REST API
+Laravel ធ្វើឱ្យការបង្កើត REST API ងាយស្រួល៖
+\`\`\`php
+Route::apiResource('tours', TourController::class);
+\`\`\`
+ជាមួយ Laravel Sanctum សម្រាប់ Authentication និង Rate Limiting ការកសាង API សុវត្ថិភាពគឺងាយស្រួល។
 
-### ៣. សេចក្តីសន្និដ្ឋាន
-បច្ចេកវិទ្យាទាំងពីរគឺជាជម្រើសដ៏ល្អឥតខ្ចោះសម្រាប់ឆ្នាំ ២០២៦។`,
+### ៣. ការរួមបញ្ចូលជាមួយ Frontend ទំនើប
+Laravel រួមបញ្ចូលជាមួយ Vite, React និង Inertia.js យ៉ាងល្អឥតខ្ចោះ៖
+\`\`\`bash
+npm install && npm run build
+\`\`\`
+
+### ៤. ការបង្កើនប្រសិទ្ធភាព
+- **Queues** សម្រាប់ដំណើរការ Background
+- **Redis caching** សម្រាប់ទិន្នន័យលឿន
+- **Database optimization** ជាមួយ Eloquent និង PostgreSQL
+
+### ៥. សេចក្តីសន្និដ្ឋាន
+Laravel 11 គឺជា Framework ដ៏ល្អបំផុតសម្រាប់ការកសាងប្រព័ន្ធ Enterprise ក្នុងឆ្នាំ ២០២៦។`,
   },
 ];

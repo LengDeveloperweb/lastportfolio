@@ -63,7 +63,7 @@ export const TECH_STACK: SkillItem[] = [
   { name: 'GitHub & Postman', category: 'Devops', level: 'Advanced', experience: '', featured: true },
   { name: 'Tailwind CSS', category: 'frontend', level: 'Expert', experience: '', featured: true },
   { name: 'C# / ASP.NET Core', category: 'backend', level: 'Proficient', experience: '', featured: true },
-  { name: 'PostgreSQL', category: 'database', level: 'Advanced', experience: '', featured: true },
+  { name: 'SQL Server', category: 'database', level: 'Advanced', experience: '', featured: true },
   { name: 'Docker', category: 'devops', level: 'Proficient', experience: '', featured: true },
   { name: 'Python / Express', category: 'backend', level: 'Advanced', experience: '', featured: true },
   { name: 'REST APIs ', category: 'backend', level: 'Proficient', experience: '' },

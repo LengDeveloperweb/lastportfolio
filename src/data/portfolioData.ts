@@ -202,9 +202,7 @@ export const PROJECTS: Project[] = [
         'Clean Architecture implementation with separated Domain, Application, Infrastructure, and API layers. Utilizes MediatR pattern for CQRS command/query segregation.',
     },
   },
-  
   {
-{
     id: 'tripsr-booking-engine',
     number: '04 / 05',
     year: '2026',
@@ -251,8 +249,7 @@ export const PROJECTS: Project[] = [
       architectureNotes:
         'Laravel 11 with Service-Repository pattern for clean separation of concerns. React components use Bootstrap 5 for consistent styling. PostgreSQL with Eloquent ORM and optimized indexes for travel booking queries. Queue workers handle email confirmations and PDF generation asynchronously.',
     },
-  }
-  
+  },
 ];
 
 export const BLOG_ARTICLES: BlogArticle[] = [

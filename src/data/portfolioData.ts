@@ -204,47 +204,54 @@ export const PROJECTS: Project[] = [
   },
   
   {
-    id: 'postgres-data-engine',
+{
+    id: 'tripsr-booking-engine',
     number: '04 / 05',
     year: '2026',
-    category: 'Database Systems & Architecture',
-    categoryKm: 'វិស្វកម្មមូលដ្ឋានទិន្នន័យ',
-    title: 'PostgreSQL Relational Optimization',
+    category: 'TripSR Platform',
+    categoryKm: 'វេទិកា TripSR',
+    title: 'TripSR Booking Platform — Laravel React Full-Stack',
     description:
-      'Advanced database schema design, indexing strategies, partial index tuning, and stored procedure benchmarks for data-intensive enterprise web systems.',
+      'Enterprise travel booking system built with Laravel 11 API, React 18 frontend, and Bootstrap 5 UI. Features real-time availability, multi-currency payments, and advanced database optimization for TripSR platform.',
     descriptionKm:
-      'ការរចនា Schema មូលដ្ឋានទិន្នន័យកម្រិតខ្ពស់ ការកំណត់ Index, Partitioning និង Stored Procedures សម្រាប់ប្រព័ន្ធសូហ្វវែរទំហំធំ។',
-    tags: ['PostgreSQL 16', 'SQL Tuning', 'Database Indexing', 'ACID', 'Docker'],
+      'ប្រព័ន្ធកក់ទេសចរណ៍កម្រិតសហគ្រាសបង្កើតដោយ Laravel 11 API, React 18 Frontend និង Bootstrap 5 UI សម្រាប់វេទិកា TripSR។',
+    tags: ['Laravel 11', 'React 18', 'Bootstrap 5', 'PostgreSQL 16', 'REST API', 'Inertia.js'],
     gradient: 'from-[#032ea6]/30 via-[#1e40af]/30 to-[#000000]',
     accentColor: '#38bdf8',
     bannerUrl: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=1200&q=80',
-    liveDemoUrl: 'https://lengtool.site',
-    sourceUrl: 'https://github.com/LengDeveloperweb/postgres-schema-benchmarks',
+    liveDemoUrl: '',
+    sourceUrl: '',
     details: {
       overview:
-        'A comprehensive benchmark repository comparing B-Tree, BRIN, and GIN inverted indexes on multi-million row datasets. Includes Dockerized setups for replication, point-in-time recovery, and connection pooling.',
+        'A full-stack travel booking platform for TripSR — combining Laravel 11 backend with React 18 frontend and Bootstrap 5 for responsive UI. Handles real-time tour availability, multi-currency payments, automated confirmations, and scales with PostgreSQL optimization.',
       overviewKm:
-        'គម្រោងស្រាវជ្រាវ និង Benchmark ប្រៀបធៀបប្រភេទ Index ផ្សេងៗ (B-Tree, BRIN, GIN) លើទិន្នន័យរាប់លានជួរ រួមជាមួយការដំឡើង Connection Pooling តាមរយៈ PgBouncer។',
+        'វេទិកាកក់ទេសចរណ៍ Full-Stack សម្រាប់ TripSR — រួមបញ្ចូល Laravel 11 Backend ជាមួយ React 18 Frontend និង Bootstrap 5 សម្រាប់ UI ឆ្លើយតប។ គ្រប់គ្រងការអាចរកបានទេសចរណ៍តាមពេលវេលាជាក់ស្តែង ការទូទាត់រូបិយប័ណ្ណច្រើន និងការបញ្ជាក់ដោយស្វ័យប្រវត្តិ។',
       specs: [
-        { label: 'Engine', value: 'PostgreSQL 16 Enterprise Tuning' },
-        { label: 'Pooling', value: 'PgBouncer with transaction mode' },
-        { label: 'Dataset', value: 'Synthetic benchmark with 5M+ records' },
-        { label: 'Query Speedup', value: '94% average execution time reduction' },
+        { label: 'Backend', value: 'Laravel 11 with RESTful API & Sanctum Auth' },
+        { label: 'Frontend', value: 'React 18 + Bootstrap 5 + Vite' },
+        { label: 'Database', value: 'PostgreSQL 16 with Eloquent ORM & Optimization' },
+        { label: 'State Management', value: 'React Context API + Laravel Cache' },
+        { label: 'Payment Gateway', value: 'Stripe & KHQR Integration' },
+        { label: 'Performance', value: '94% query speed improvement via indexing' },
       ],
       impact: [
-        'Transformed slow multi-table JOIN queries from 4.2s to 12ms using targeted compound indexes.',
-        'Implemented strict row-level security (RLS) policies for multi-tenant data safety.',
-        'Automated health telemetry logging using pg_stat_statements.',
+        'Built responsive travel booking UI with React components and Bootstrap 5 grid system — optimized for mobile and desktop.',
+        'Implemented Laravel REST API with 40+ endpoints for tour management, bookings, payments, and user profiles.',
+        'Reduced booking confirmation time from 8s to 1.2s using Laravel queues, Redis caching, and PostgreSQL indexing.',
+        'Integrated multi-currency support (USD, KHR, THB) with real-time exchange rates for TripSR international travelers.',
+        'Deployed with Docker containerization and CI/CD pipeline for seamless updates.',
       ],
       impactKm: [
-        'កាត់បន្ថយរយៈពេលដំណើរការ JOIN Query ពី ៤.២ វិនាទី មកត្រឹម ១២ មិល្លីវិនាទី។',
-        'អនុវត្តប្រព័ន្ធសុវត្ថិភាព Row-Level Security (RLS) ការពារទិន្នន័យដាច់ដោយឡែក។',
-        'កត់ត្រាការវិភាគទិន្នន័យ Query ដោយស្វ័យប្រវត្តិតាមរយៈ pg_stat_statements។',
+        'បង្កើត UI កក់ទេសចរណ៍ឆ្លើយតបជាមួយ React Components និង Bootstrap 5 Grid System — បង្កើនប្រសិទ្ធភាពសម្រាប់ទូរស័ព្ទដៃ និងកុំព្យូទ័រ។',
+        'អនុវត្ត Laravel REST API ជាមួយ 40+ Endpoints សម្រាប់ការគ្រប់គ្រងទេសចរណ៍ ការកក់ ការទូទាត់ និងទម្រង់អ្នកប្រើប្រាស់។',
+        'កាត់បន្ថយពេលវេលាបញ្ជាក់ការកក់ពី ៨ វិនាទី មកត្រឹម ១.២ វិនាទី ដោយប្រើ Laravel Queues, Redis Caching និង PostgreSQL Indexing។',
+        'បញ្ចូលការគាំទ្ររូបិយប័ណ្ណច្រើន (USD, KHR, THB) ជាមួយអត្រាប្តូរប្រាក់តាមពេលវេលាជាក់ស្តែងសម្រាប់ភ្ញៀវទេសចរណ៍អន្តរជាតិ TripSR។',
+        'ដំឡើងជាមួយ Docker Containerization និង CI/CD Pipeline សម្រាប់ការធ្វើបច្ចុប្បន្នភាពគ្មានថ្នេរ។',
       ],
       architectureNotes:
-        'Includes detailed EXPLAIN ANALYZE execution cost graphs illustrating sequential scan elimination and memory buffer hit optimization.',
+        'Laravel 11 with Service-Repository pattern for clean separation of concerns. React components use Bootstrap 5 for consistent styling. PostgreSQL with Eloquent ORM and optimized indexes for travel booking queries. Queue workers handle email confirmations and PDF generation asynchronously.',
     },
-  },
+  }
   
 ];
 
